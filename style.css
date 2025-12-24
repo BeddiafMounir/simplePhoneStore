@@ -131,3 +131,50 @@ hr {
   text-decoration: underline;
 }
 
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+
+  table, thead, tbody, th, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  .product-row {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  }
+
+  .product-row td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border: none;
+  }
+
+  .product-row td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  details summary {
+    font-size: 16px;
+  }
+}
+
