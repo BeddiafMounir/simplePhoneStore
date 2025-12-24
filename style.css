@@ -70,3 +70,36 @@ details p {
   color: #28a745;
   font-size: 16px;
 }
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #007bff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+details summary:hover {
+  background-color: #eef5ff;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+
+/* Rotate arrow when opened */
+details[open] .arrow {
+  transform: rotate(90deg);
+}
