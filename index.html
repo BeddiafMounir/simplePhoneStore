@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Simple Store</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Welcome to My Store</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <div class="products">
-      <div class="product">
-        <h3>phone  1</h3>
-        <p>img</p>
-        <p>80000 da </p>
-        
-       </div>
-<div class="product">
-        <h3>phone  2</h3>
-        <p>img</p>
-        <p>78000 da </p>
-        
-       </div>
-      <div class="product">
-        <h3>phone  3</h3>
-        <p>img</p>
-        <p>68000 da </p>
-        
-       </div>
-    </div>
-  </body>
+<body>
+  <div class="container">
+    <h1>📱 Welcome to My Store</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Phone</th>
+          <th>Image</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <details>
+              <summary>Phone 1</summary>
+              <p>
+                6.5" Display<br>
+                128GB Storage<br>
+                5000mAh Battery
+              </p>
+            </details>
+          </td>
+          <td>
+            <img src="https://via.placeholder.com/80" alt="Phone 1">
+          </td>
+          <td class="price">80,000 DA</td>
+        </tr>
+
+        <tr>
+          <td>
+            <details>
+              <summary>Phone 2</summary>
+              <p>
+                6.1" Display<br>
+                64GB Storage<br>
+                4500mAh Battery
+              </p>
+            </details>
+          </td>
+          <td>
+            <img src="https://via.placeholder.com/80" alt="Phone 2">
+          </td>
+          <td class="price">78,000 DA</td>
+        </tr>
+
+        <tr>
+          <td>
+            <details>
+              <summary>Phone 3</summary>
+              <p>
+                6.7" Display<br>
+                256GB Storage<br>
+                6000mAh Battery
+              </p>
+            </details>
+          </td>
+          <td>
+            <img src="https://via.placeholder.com/80" alt="Phone 3">
+          </td>
+          <td class="price">68,000 DA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
 </html>
-
-
-
 
