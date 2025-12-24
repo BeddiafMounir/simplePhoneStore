@@ -103,3 +103,32 @@ details summary:hover {
 details[open] .arrow {
   transform: rotate(90deg);
 }
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
