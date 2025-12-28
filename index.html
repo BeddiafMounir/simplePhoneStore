@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Phone Store</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Phone Store</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <div class="container">
     <h1>📱 Welcome to My Store</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Phone</th>
-          <th>Image</th>
-          <th>Price</th>
-        </tr>
-      </thead>
+    <div class="list">
 
-      <tbody>
+      <div class="row">
+        <details>
+          <summary>
+            <span class="name">Phone 1</span>
+            <span class="price">80,000 DA</span>
+          </summary>
+          <div class="specs">
+            RAM: 8GB<br>
+            Storage: 128GB<br>
+            Camera: 50MP<br>
+            Battery: 5000mAh
+          </div>
+        </details>
+        <div class="image">Image</div>
+      </div>
 
-        <tr>
-          <td>
-            <div class="phone-name" onclick="toggleSpecs(this)">
-              Phone 1
-              <div class="hint">click to show specs</div>
-            </div>
-            <div class="specs">
-              6.5" Display<br>
-              128GB Storage<br>
-              5000mAh Battery
-            </div>
-          </td>
-          <td><img src="https://via.placeholder.com/120" alt="Phone 1"></td>
-          <td class="price">80,000 DA</td>
-        </tr>
+      <div class="row">
+        <details>
+          <summary>
+            <span class="name">Phone 2</span>
+            <span class="price">78,000 DA</span>
+          </summary>
+          <div class="specs">
+            RAM: 6GB<br>
+            Storage: 128GB<br>
+            Camera: 48MP<br>
+            Battery: 4500mAh
+          </div>
+        </details>
+        <div class="image">Image</div>
+      </div>
 
-        <tr>
-          <td>
-            <div class="phone-name" onclick="toggleSpecs(this)">
-              Phone 2
-              <div class="hint">click to show specs</div>
-            </div>
-            <div class="specs">
-              6.1" Display<br>
-              64GB Storage<br>
-              4500mAh Battery
-            </div>
-          </td>
-          <td><img src="https://via.placeholder.com/120" alt="Phone 2"></td>
-          <td class="price">78,000 DA</td>
-        </tr>
+      <div class="row">
+        <details>
+          <summary>
+            <span class="name">Phone 3</span>
+            <span class="price">68,000 DA</span>
+          </summary>
+          <div class="specs">
+            RAM: 6GB<br>
+            Storage: 64GB<br>
+            Camera: 40MP<br>
+            Battery: 4300mAh
+          </div>
+        </details>
+        <div class="image">Image</div>
+      </div>
 
-        <tr>
-          <td>
-            <div class="phone-name" onclick="toggleSpecs(this)">
-              Phone 3
-              <div class="hint">click to show specs</div>
-            </div>
-            <div class="specs">
-              6.7" Display<br>
-              256GB Storage<br>
-              6000mAh Battery
-            </div>
-          </td>
-          <td><img src="https://via.placeholder.com/120" alt="Phone 3"></td>
-          <td class="price">68,000 DA</td>
-        </tr>
-
-      </tbody>
-    </table>
+    </div>
 
     <hr>
 
-    <section class="contact">
+    <div class="contact">
       <h2>📞 Contact Me</h2>
-      <p>Facebook: Mounir</p>
-      <p>Phone: <strong>0554 67 37 61</strong></p>
-      <p>WhatsApp: +213 554 67 37 61</p>
-    </section>
+
+      <a href="https://web.facebook.com/mounir.sniper45" target="_blank">
+        Facebook: Mounir
+      </a>
+
+      <a href="tel:0554673761">
+        Phone: 0554 67 37 61
+      </a>
+
+      <a href="https://wa.me/213554673761" target="_blank">
+        WhatsApp: +213 554 67 37 61
+      </a>
+    </div>
+
   </div>
 
-  <script>
-    function toggleSpecs(el) {
-      const specs = el.nextElementSibling;
-      specs.style.display =
-        specs.style.display === "block" ? "none" : "block";
-    }
-  </script>
 </body>
 </html>
