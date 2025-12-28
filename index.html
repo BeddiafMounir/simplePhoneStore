@@ -2,86 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Phone Store</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>📱 Welcome to My Store</h1>
+<div class="container">
+  <h1>📱 Welcome to My Store</h1>
 
-    <div class="list">
+  <!-- DESKTOP TABLE -->
+  <table class="desktop-table">
+    <thead>
+      <tr>
+        <th>Phone</th>
+        <th>Image</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Phone 1<br>
+          <span class="spec-toggle" onclick="toggleSpecs('spec1')">click to show specs</span>
+          <div id="spec1" class="specs">RAM 8GB · Storage 128GB</div>
+        </td>
+        <td>Phone 1</td>
+        <td class="price">80,000 DA</td>
+      </tr>
 
-      <div class="row">
-        <details>
-          <summary>
-            <span class="name">Phone 1</span>
-            <span class="price">80,000 DA</span>
-          </summary>
-          <div class="specs">
-            RAM: 8GB<br>
-            Storage: 128GB<br>
-            Camera: 50MP<br>
-            Battery: 5000mAh
-          </div>
-        </details>
-        <div class="image">Image</div>
-      </div>
+      <tr>
+        <td>
+          Phone 2<br>
+          <span class="spec-toggle" onclick="toggleSpecs('spec2')">click to show specs</span>
+          <div id="spec2" class="specs">RAM 6GB · Storage 128GB</div>
+        </td>
+        <td>Phone 2</td>
+        <td class="price">78,000 DA</td>
+      </tr>
 
-      <div class="row">
-        <details>
-          <summary>
-            <span class="name">Phone 2</span>
-            <span class="price">78,000 DA</span>
-          </summary>
-          <div class="specs">
-            RAM: 6GB<br>
-            Storage: 128GB<br>
-            Camera: 48MP<br>
-            Battery: 4500mAh
-          </div>
-        </details>
-        <div class="image">Image</div>
-      </div>
+      <tr>
+        <td>
+          Phone 3<br>
+          <span class="spec-toggle" onclick="toggleSpecs('spec3')">click to show specs</span>
+          <div id="spec3" class="specs">RAM 4GB · Storage 64GB</div>
+        </td>
+        <td>Phone 3</td>
+        <td class="price">68,000 DA</td>
+      </tr>
+    </tbody>
+  </table>
 
-      <div class="row">
-        <details>
-          <summary>
-            <span class="name">Phone 3</span>
-            <span class="price">68,000 DA</span>
-          </summary>
-          <div class="specs">
-            RAM: 6GB<br>
-            Storage: 64GB<br>
-            Camera: 40MP<br>
-            Battery: 4300mAh
-          </div>
-        </details>
-        <div class="image">Image</div>
-      </div>
-
+  <!-- MOBILE CARDS -->
+  <div class="mobile-cards">
+    <div class="card">
+      <h3>Phone 1</h3>
+      <p class="price">80,000 DA</p>
+      <span class="spec-toggle" onclick="toggleSpecs('mspec1')">click to show specs</span>
+      <div id="mspec1" class="specs">RAM 8GB · Storage 128GB</div>
     </div>
 
-    <hr>
-
-    <div class="contact">
-      <h2>📞 Contact Me</h2>
-
-      <a href="https://web.facebook.com/mounir.sniper45" target="_blank">
-        Facebook: Mounir
-      </a>
-
-      <a href="tel:0554673761">
-        Phone: 0554 67 37 61
-      </a>
-
-      <a href="https://wa.me/213554673761" target="_blank">
-        WhatsApp: +213 554 67 37 61
-      </a>
+    <div class="card">
+      <h3>Phone 2</h3>
+      <p class="price">78,000 DA</p>
+      <span class="spec-toggle" onclick="toggleSpecs('mspec2')">click to show specs</span>
+      <div id="mspec2" class="specs">RAM 6GB · Storage 128GB</div>
     </div>
 
+    <div class="card">
+      <h3>Phone 3</h3>
+      <p class="price">68,000 DA</p>
+      <span class="spec-toggle" onclick="toggleSpecs('mspec3')">click to show specs</span>
+      <div id="mspec3" class="specs">RAM 4GB · Storage 64GB</div>
+    </div>
   </div>
 
+  <hr>
+
+  <div class="contact">
+    <h2>📞 Contact Me</h2>
+    <p>
+      Facebook:
+      <a href="https://web.facebook.com/mounir.sniper45" target="_blank">
+        Mounir
+      </a>
+    </p>
+    <p>
+      Phone:
+      <a href="tel:0554673761">0554 67 37 61</a>
+    </p>
+    <p>
+      WhatsApp:
+      <a href="https://wa.me/213554673761" target="_blank">
+        +213 554 67 37 61
+      </a>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
