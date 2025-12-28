@@ -1,112 +1,92 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background: #f4f6f8;
-  padding: 30px 0;
 }
 
 .container {
-  background: #fff;
-  width: 95%;
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 16px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-th, td {
-  padding: 14px;
-  border-bottom: 1px solid #ddd;
-  vertical-align: top;
+.row {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
 
-th {
-  background: #f0f0f0;
+details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
 }
 
-img {
-  width: 110px;
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.name {
+  font-weight: bold;
 }
 
 .price {
+  color: #2e7d32;
   font-weight: bold;
-  color: #2e8b57;
-  white-space: nowrap;
-}
-
-/* Phone & specs */
-.phone-name {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.hint {
-  font-size: 12px;
-  color: #777;
-  font-weight: normal;
-  margin-top: 2px;
 }
 
 .specs {
-  display: none;
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 14px;
-  color: #444;
+  color: #555;
 }
 
-/* Contact */
+.image {
+  margin-top: 10px;
+  background: #eaeaea;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+}
+
 hr {
   margin: 30px 0;
-  border: none;
-  border-top: 1px solid #ddd;
 }
 
 .contact {
   text-align: center;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  th {
-    display: none;
-  }
+.contact a {
+  display: block;
+  margin: 8px 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+}
 
-  tr {
-    display: block;
-    margin-bottom: 18px;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  }
-
-  td {
-    display: block;
-    border: none;
-    padding: 8px 0;
-  }
-
-  img {
-    display: block;
-    margin: auto;
-  }
-
-  .price {
-    text-align: center;
-    font-size: 18px;
-  }
+.contact a:active {
+  opacity: 0.6;
 }
