@@ -3,24 +3,24 @@
 }
 
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f6f8;
-  margin: 0;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
-
 .container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  background: #fff;
+  width: 95%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 h1 {
+  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -29,214 +29,103 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
-  padding: 15px;
+th, td {
+  padding: 14px;
   border-bottom: 1px solid #ddd;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 th {
-  background-color: #f0f0f0;
-  font-weight: bold;
+  background: #f0f0f0;
 }
 
 img {
-  width: 80px;
-  height: auto;
+  width: 110px;
 }
 
-details summary {
-  cursor: pointer;
+.price {
   font-weight: bold;
-  color: #007bff;
-  list-style: none;
+  color: #2e8b57;
+  white-space: nowrap;
 }
 
-details summary:hover {
-  text-decoration: underline;
+/* Specs toggle */
+.phone {
+  cursor: pointer;
+  display: block;
 }
 
-details p {
+.phone input {
+  display: none;
+}
+
+.hint {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.specs {
+  display: none;
   margin-top: 8px;
   font-size: 14px;
   color: #444;
 }
 
-.price {
-  font-weight: bold;
-  color: #28a745;
-  font-size: 16px;
+.phone input:checked + .specs {
+  display: block;
 }
 
-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #007bff;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-details summary:hover {
-  background-color: #eef5ff;
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.hint {
-  font-size: 12px;
-  color: #666;
-  font-weight: normal;
-}
-
-.arrow {
-  transition: transform 0.2s ease;
-  font-size: 14px;
-}
-
-/* Rotate arrow when opened */
-details[open] .arrow {
-  transform: rotate(90deg);
-}
-
+/* Contact */
 hr {
   margin: 30px 0;
   border: none;
   border-top: 1px solid #ddd;
 }
+
 .contact {
   text-align: center;
-  margin-top: 30px;
-}
-
-.contact h2 {
-  margin-bottom: 15px;
-}
-
-.contact p {
-  font-size: 15px;
-  margin: 10px 0;
 }
 
 .contact a {
-  color: #007bff;
-  font-weight: bold;
+  color: #333;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .contact a:hover {
   text-decoration: underline;
 }
 
-
-/* 📱 MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
 
-  table, thead, tbody, th, tr {
-    display: block;
-  }
-
-  thead {
-    display: none;
-  }
-
-  .product-row {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  }
-
-  .product-row td {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border: none;
-  }
-
-  .product-row td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #555;
-  }
-
-  img {
-    width: 100px;
-  }
-
-  .price {
-    font-size: 18px;
-  }
-
-  details summary {
-    font-size: 16px;
-  }
-}
-
-/* Hide mobile hint on desktop */
-.hint-mobile {
-  display: none;
-}
-
-/* Hide desktop hint on mobile */
-@media (max-width: 768px) {
-  .hint-desktop {
-    display: none;
-  }
-  .hint-mobile {
-    display: inline;
-    font-size: 12px;
-    color: #777;
-  }
-}
-
-@media (max-width: 768px) {
-
-  table, thead, tbody, tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
+  th {
     display: none;
   }
 
   tr {
-    background: white;
-    margin-bottom: 16px;
-    padding: 16px;
-    border-radius: 14px;
+    display: block;
+    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
 
   td {
     display: block;
-    padding: 8px 0;
     border: none;
+    padding: 8px 0;
   }
 
-  td img {
+  img {
     display: block;
-    margin: 10px auto;
-    width: 120px;
+    margin: auto;
   }
 
   .price {
-    font-size: 20px;
     text-align: center;
-  }
-
-  details summary {
     font-size: 18px;
   }
-
-  .container {
-    padding: 15px;
-  }
 }
-
