@@ -97,3 +97,10 @@ h1 {
     display: block;
   }
 }
+
+.desktop-table td img {
+  display: block;
+  margin: 5px auto; /* centers horizontally */
+}
+
+
