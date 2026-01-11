@@ -52,12 +52,16 @@ h1 {
   cursor: pointer;
 }
 
+
 .specs {
   display: none;
-  font-size: 13px;
-  margin-top: 6px;
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.6;
+  font-size: 14px;
   color: #444;
 }
+
 
 /* MOBILE CARDS */
 .mobile-cards {
@@ -102,5 +106,6 @@ h1 {
   display: block;
   margin: 5px auto; /* centers horizontally */
 }
+
 
 
